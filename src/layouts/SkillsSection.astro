@@ -1,0 +1,18 @@
+---
+import SkillCategory from '../components/skills/SkillCategory.astro';
+import skills from '../skills';
+---
+
+<section>
+    <h2 class="text-3xl w-full font-bold mb-6 mt-10">Technical Skills</h2>
+    <div class="px-4">
+        <div class="mb-12 text-neutral-content">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum maxime aliquid
+            ex pariatur obcaecati saepe distinctio aut explicabo, illum voluptatum quae
+            autem ad officia nostrum nesciunt inventore sed molestias sunt!
+        </div>
+        <SkillCategory title="Languages" skills={skills.languages} />
+        <SkillCategory title="Web Frameworks & Packages" skills={skills.frameworks} />
+        <SkillCategory title="Software & Tools" skills={skills.software} />
+    </div>
+</section>

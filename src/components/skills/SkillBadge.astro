@@ -1,0 +1,12 @@
+---
+interface Props {
+    src: string;
+    alt: string;
+    group: string; // Tailwind hover group name
+}
+
+const { src, alt, group } = Astro.props;
+const groupClassName = `group-hover/${group}:opacity-50`;
+---
+
+<img class={groupClassName} src={src} alt={alt} title={alt} />

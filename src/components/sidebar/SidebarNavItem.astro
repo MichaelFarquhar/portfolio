@@ -1,0 +1,14 @@
+---
+interface Props {
+    href: string;
+}
+---
+
+<li class="mb-2 hover:text-primary">
+    <a {...Astro.props}>
+        <slot name="icon" />
+        <span class="font-semibold ml-1">
+            <slot />
+        </span>
+    </a>
+</li>

@@ -4,7 +4,7 @@ import SidebarNavItem from './SidebarNavItem.astro';
 
 <nav class="mt-4">
     <div class="opacity-40 mb-3 font-mono px-4">// Navigation</div>
-    <ul class="mb-10">
+    <ul class="mb-10" aria-label="Navigation links list">
         <SidebarNavItem href="/">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -80,7 +80,7 @@ import SidebarNavItem from './SidebarNavItem.astro';
     </ul>
 
     <div class="opacity-40 mb-3 font-mono px-4">// Links</div>
-    <ul>
+    <ul aria-label="Outbound links list">
         <SidebarNavItem href="https://github.com/MichaelFarquhar" target="_blank">
             <svg
                 role="img"

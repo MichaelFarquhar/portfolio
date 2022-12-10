@@ -15,6 +15,9 @@ const { image, title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.prop
         <BaseHead title={title} description={description} image={image} />
     </head>
     <body>
+        <!-- Skip navigation link -->
+        <a class="skip-nav" href="#main-content">Skip to main content</a>
+
         <div class="bg-base-100 drawer drawer-mobile">
             <input id="my-drawer" type="checkbox" class="drawer-toggle" />
             <div class="drawer-content flex flex-col bg-base-100">
@@ -39,7 +42,7 @@ const { image, title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.prop
                     </button>
                 </div>
                 <div class="md:flex md:justify-center">
-                    <main class="p-6 pt-10 max-w-[900px]">
+                    <main class="p-6 pt-10 max-w-[900px]" id="main-content">
                         <slot />
                     </main>
                 </div>
@@ -98,3 +101,15 @@ const { image, title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.prop
         </script>
     </body>
 </html>
+
+<style>
+    .skip-nav {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+    }
+</style>

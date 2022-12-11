@@ -5,17 +5,20 @@ interface Props {
 }
 
 // If nav item is an outbound link, show an icon on hover
-const enableOutbindIcon = !Astro.props.href.startsWith('/');
+const isOutboundLink = !Astro.props.href.startsWith('#');
 ---
 
-<li class="mb-2 group hover:text-primary hover:translate-x-2 transition">
+<li
+    class="nav-item mb-2 group hover:text-primary hover:translate-x-2 transition"
+    data-section={isOutboundLink ? '' : Astro.props.href.substring(1)}
+>
     <a {...Astro.props} class="flex">
         <slot name="icon" />
         <span class="font-semibold ml-1">
             <slot />
         </span>
         {
-            enableOutbindIcon && (
+            isOutboundLink && (
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"

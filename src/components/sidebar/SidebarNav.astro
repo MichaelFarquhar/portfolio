@@ -3,9 +3,9 @@ import SidebarNavItem from './SidebarNavItem.astro';
 ---
 
 <nav class="mt-4">
-    <div class="opacity-40 mb-3 font-mono px-4">// Navigation</div>
+    <div class="opacity-40 mb-3 font-mono italic px-4">// Navigation</div>
     <ul class="mb-10" aria-label="Navigation links list">
-        <SidebarNavItem href="/">
+        <SidebarNavItem href="#about">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -23,7 +23,7 @@ import SidebarNavItem from './SidebarNavItem.astro';
             </svg>
             About Me
         </SidebarNavItem>
-        <SidebarNavItem href="/projects">
+        <SidebarNavItem href="#projects">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -41,7 +41,7 @@ import SidebarNavItem from './SidebarNavItem.astro';
             </svg>
             Projects
         </SidebarNavItem>
-        <SidebarNavItem href="/skills">
+        <SidebarNavItem href="#skills">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -61,7 +61,7 @@ import SidebarNavItem from './SidebarNavItem.astro';
         </SidebarNavItem>
     </ul>
 
-    <div class="opacity-40 mb-3 font-mono px-4">// Links</div>
+    <div class="opacity-40 mb-3 font-mono italic px-4">// Links</div>
     <ul aria-label="Outbound links list">
         <SidebarNavItem href="https://github.com/MichaelFarquhar" target="_blank">
             <svg

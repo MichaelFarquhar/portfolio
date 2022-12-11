@@ -23,7 +23,7 @@ const { image, title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.prop
             <div class="drawer-content flex flex-col bg-base-100">
                 <Header title={SITE_TITLE} />
                 <div class="hidden md:flex justify-end pt-8 px-12">
-                    <button class="btn btn-secondary gap-2" id="theme-switch">
+                    <button class="theme-switch btn btn-secondary gap-2">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -95,12 +95,41 @@ const { image, title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.prop
                 htmlTag.setAttribute('data-theme', selectedTheme);
             };
 
-            document.getElementById('theme-switch').addEventListener('click', () => {
-                randomizeTheme();
+            document.querySelectorAll('.theme-switch').forEach((element) => {
+                element.addEventListener('click', () => {
+                    randomizeTheme();
+                });
             });
         </script>
     </body>
 </html>
+
+<!-- <script>
+    const mainContent = document.querySelector('.drawer-content');
+    const sections = document.querySelectorAll('section');
+    const navItems = document.querySelectorAll('.nav-item');
+    let current = '';
+
+    mainContent.addEventListener('scroll', () => {
+        console.log('scrolling');
+        sections.forEach((section) => {
+            const sectionTop = section.offsetTop;
+
+            if (mainContent.scrollTop + 50 >= sectionTop) {
+                console.log('hey');
+                current = section.getAttribute('id');
+            }
+        });
+
+        navItems.forEach((li) => {
+            console.log(li);
+            li.classList.remove('active');
+            if (li.getAttribute('data-section') === current) {
+                li.classList.add('active');
+            }
+        });
+    });
+</script> -->
 
 <style>
     .skip-nav {

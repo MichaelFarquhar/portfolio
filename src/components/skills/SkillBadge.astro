@@ -6,7 +6,6 @@ interface Props {
 }
 
 const { src, alt, group } = Astro.props;
-const groupClassName = `group-hover/${group}:opacity-50`;
 ---
 
-<img class={groupClassName} src={src} alt={alt} title={alt} />
+<img class="transition ease-in-out" data-type={group} src={src} alt={alt} title={alt} />

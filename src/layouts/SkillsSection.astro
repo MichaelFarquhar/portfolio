@@ -5,11 +5,15 @@ import skills from '../skills';
 
 <section>
     <h2 class="text-3xl w-full font-bold mb-6 mt-10">Technical Skills</h2>
-    <div class="px-4">
-        <div class="mb-12 text-neutral-content">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum maxime aliquid
-            ex pariatur obcaecati saepe distinctio aut explicabo, illum voluptatum quae
-            autem ad officia nostrum nesciunt inventore sed molestias sunt!
+    <div class="px-4" id="skills-parent">
+        <div class="mb-14 text-neutral-content">
+            I have experience using a variety of languages and frameworks in both <span
+                class="text-primary font-bold group/work hover:text-primary-focus cursor-pointer"
+                id="work-span-hover">career</span
+            > projects and <span
+                class="text-primary font-bold group/personal hover:text-primary-focus cursor-pointer"
+                id="personal-span-hover">personal</span
+            > projects.
         </div>
         <SkillCategory title="Languages" skills={skills.languages}>
             <svg
@@ -52,3 +56,28 @@ import skills from '../skills';
         </SkillCategory>
     </div>
 </section>
+
+<script>
+    // Select all images where the data-type attribute is "work" / "personal"
+    const workSkills = document.querySelectorAll('img[data-type="work"]');
+    const personalSkills = document.querySelectorAll('img[data-type="personal"]');
+
+    const workHoverElement = document.querySelector('#work-span-hover');
+    const personalHoverElement = document.querySelector('#personal-span-hover');
+
+    const classStrings = ['opacity-20', 'grayscale'];
+
+    // Handle event listeneners for hovering over spans
+    personalHoverElement.addEventListener('mouseover', () => {
+        workSkills.forEach((el) => el.classList.add(...classStrings));
+    });
+    personalHoverElement.addEventListener('mouseout', () => {
+        workSkills.forEach((el) => el.classList.remove(...classStrings));
+    });
+    workHoverElement.addEventListener('mouseover', () => {
+        personalSkills.forEach((el) => el.classList.add(...classStrings));
+    });
+    workHoverElement.addEventListener('mouseout', () => {
+        personalSkills.forEach((el) => el.classList.remove(...classStrings));
+    });
+</script>

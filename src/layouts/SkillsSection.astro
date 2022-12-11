@@ -11,8 +11,44 @@ import skills from '../skills';
             ex pariatur obcaecati saepe distinctio aut explicabo, illum voluptatum quae
             autem ad officia nostrum nesciunt inventore sed molestias sunt!
         </div>
-        <SkillCategory title="Languages" skills={skills.languages} />
-        <SkillCategory title="Web Frameworks & Packages" skills={skills.frameworks} />
-        <SkillCategory title="Software & Tools" skills={skills.software} />
+        <SkillCategory title="Languages" skills={skills.languages}>
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-5 h-5"
+            >
+                <path
+                    fill-rule="evenodd"
+                    d="M3 6a3 3 0 013-3h12a3 3 0 013 3v12a3 3 0 01-3 3H6a3 3 0 01-3-3V6zm14.25 6a.75.75 0 01-.22.53l-2.25 2.25a.75.75 0 11-1.06-1.06L15.44 12l-1.72-1.72a.75.75 0 111.06-1.06l2.25 2.25c.141.14.22.331.22.53zm-10.28-.53a.75.75 0 000 1.06l2.25 2.25a.75.75 0 101.06-1.06L8.56 12l1.72-1.72a.75.75 0 10-1.06-1.06l-2.25 2.25z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </SkillCategory>
+        <SkillCategory title="Web Frameworks & Packages" skills={skills.frameworks}>
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-5 h-5"
+            >
+                <path
+                    d="M12.378 1.602a.75.75 0 00-.756 0L3 6.632l9 5.25 9-5.25-8.622-5.03zM21.75 7.93l-9 5.25v9l8.628-5.032a.75.75 0 00.372-.648V7.93zM11.25 22.18v-9l-9-5.25v8.57a.75.75 0 00.372.648l8.628 5.033z"
+                ></path>
+            </svg>
+        </SkillCategory>
+
+        <SkillCategory title="Software & Tools" skills={skills.software}>
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-5 h-5"
+            >
+                <path
+                    fill-rule="evenodd"
+                    d="M12 6.75a5.25 5.25 0 016.775-5.025.75.75 0 01.313 1.248l-3.32 3.319c.063.475.276.934.641 1.299.365.365.824.578 1.3.64l3.318-3.319a.75.75 0 011.248.313 5.25 5.25 0 01-5.472 6.756c-1.018-.086-1.87.1-2.309.634L7.344 21.3A3.298 3.298 0 112.7 16.657l8.684-7.151c.533-.44.72-1.291.634-2.309A5.342 5.342 0 0112 6.75zM4.117 19.125a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75h-.008a.75.75 0 01-.75-.75v-.008z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </SkillCategory>
     </div>
 </section>

@@ -6,21 +6,58 @@ const { title, img, desc, url, badge, tags, target = '_blank' } = Astro.props;
     class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%]"
 >
     <a href={url} target={target}>
-        <div class="hero-content flex-col md:flex-row">
-            <img src={img} alt={title} class="max-w-full md:max-w-[13rem] rounded-lg" />
+        <div class="hero-content flex-col md:flex-row items-start">
+            <img src={img} alt={title} class="max-w-full md:max-w-[16rem] rounded-lg" />
             <div class="grow w-full">
-                <h1 class="text-xl font-bold">
-                    {title}
-                    {badge && <div class="badge badge-secondary mx-2">{badge}</div>}
-                </h1>
+                <div class="flex items-center justify-between flex-wrap gap-2 mb-2">
+                    <h1 class="text-2xl font-bold">{title}</h1>
+                    <div class="flex items-center space-x-2">
+                        {
+                            badge && (
+                                <div class="badge badge-info mx-2 rounded-none">
+                                    {badge}
+                                </div>
+                            )
+                        }
+                    </div>
+                </div>
                 <p class="py-1 text-1xl">{desc}</p>
-                <div class="card-actions justify-end">
-                    {
-                        tags &&
-                            tags.map((tag) => (
-                                <div class="badge badge-outline">{tag}</div>
-                            ))
-                    }
+                <div class="card-actions mt-4">
+                    <button class="btn btn-sm btn-outline gap-2">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="w-5 h-5"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M3 8.25V18a2.25 2.25 0 002.25 2.25h13.5A2.25 2.25 0 0021 18V8.25m-18 0V6a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6zM7.5 6h.008v.008H7.5V6zm2.25 0h.008v.008H9.75V6z"
+                            ></path>
+                        </svg>
+
+                        Demo
+                    </button>
+                    <button class="btn btn-sm btn-accent btn-outline gap-2">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="w-5 h-5"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
+                            ></path>
+                        </svg>
+                        Source
+                    </button>
                 </div>
             </div>
         </div>

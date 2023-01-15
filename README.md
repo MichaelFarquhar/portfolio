@@ -1,17 +1,25 @@
 # Astro Modern Personal Website
 
-Modern Personal Website Template with Project Section, CV Section, Paginated Blog, RSS Feed, SEO Friendly, Visual themes and Responsive Desing for Astro framework.
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-## Installation
+My portfolio website built on Astro, using vanilla HTML and Javascript, styled with Tailwindcss and DaisyUI.
 
-Run the following command in your terminal.
+The initial design of the site was templated with an [Astro Template](https://github.com/manuelernestog/astro-modern-personal-website) created by Manuel Ernesto.
+
+## Local Install
 
 ```bash
-npm install:
+git clone https://github.com/MichaelFarquhar/portfolio.git
 ```
 
 ```bash
-npm run dev
+npm install
+```
+
+```bash
+npm start
 ```
 
 ## Tech Stack
@@ -19,13 +27,3 @@ npm run dev
 -   [Astro](https://astro.build)
 -   [tailwindcss](https://tailwindcss.com/)
 -   [DaisyUI](https://daisyui.com/)
-
-## Sitemap
-
-The Sitemap is generated automatically when you build your website in the root of the domain. Please update the `robots.txt` file in the public folder with your site name URL for the Sitemap.
-
-## Deploy
-
-You can deploy your site on your favorite static hosting service such as Vercel, Netlify, GitHub Pages, etc.
-
-The configuration for the deployment varies depending on the platform where you are going to do it. See the [official Astro information](https://docs.astro.build/en/guides/deploy/) to deploy your website.

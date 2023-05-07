@@ -8,7 +8,7 @@
 
 ---
 
-My portfolio website built on Astro, using vanilla HTML and Javascript, styled with Tailwindcss and DaisyUI.
+My portfolio website built on Astro, using vanilla HTML and Javascript, styled with TailwindCSS and DaisyUI.
 
 The initial design of the site was templated with an [Astro Template](https://github.com/manuelernestog/astro-modern-personal-website) created by Manuel Ernesto.
 
@@ -31,3 +31,9 @@ npm start
 -   [Astro](https://astro.build)
 -   [tailwindcss](https://tailwindcss.com/)
 -   [DaisyUI](https://daisyui.com/)
+
+## Resources
+
+-   [Themes - DaisyUI](https://daisyui.com/docs/themes/)
+-   [Icons - Hero Icons](https://heroicons.com/)
+-   [Skill Badges - Shields.io](https://shields.io/)

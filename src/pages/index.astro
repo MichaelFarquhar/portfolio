@@ -37,7 +37,8 @@ import ProjectList from '../components/ProjectList.astro';
             <div class="mt-8">
                 <a
                     class="btn btn-primary gap-3 font-bold"
-                    href="mai&#108;to&#58;mich&#97;elf%6&#49;r&#113;&#117;h%61r4&#64;g&#109;&#97;i&#108;&#46;&#99;om"
+                    href="#"
+                    onclick="let username = String.fromCharCode(109, 105, 99, 104, 97, 101, 108, 102, 97, 114, 113, 117, 104, 97, 114, 52); let domain = String.fromCharCode(103, 109, 97, 105, 108, 46, 99, 111, 109); this.href = 'mailto:' + username + '@' + domain;"
                     aria-label="Email me"
                 >
                     <svg

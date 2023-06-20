@@ -14,14 +14,14 @@ const { title, img, desc, demo, source, badges } = Astro.props;
 <article class="hero-content flex-col md:flex-row items-start">
     <img src={img} alt={title} class="max-w-full md:max-w-[16rem] rounded-lg" />
     <div class="grow w-full">
-        <div class="flex items-center justify-between flex-wrap gap-2 mb-2">
+        <div class="flex items-center justify-between flex-wrap gap-y-4 mb-4">
             <h1 class="text-2xl font-bold">{title}</h1>
-            <div class="flex items-center">
+            <div class="flex items-center space-x-3">
                 {
                     badges &&
                         badges.map((badge) => {
                             return (
-                                <div class="badge badge-info mx-2 rounded-none">
+                                <div class="badge badge-info rounded-none">
                                     {badge}
                                 </div>
                             );

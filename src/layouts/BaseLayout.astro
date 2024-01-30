@@ -9,7 +9,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 const { image, title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="halloween" id="html">
     <head>
         <BaseHead title={title} description={description} image={image} />
@@ -36,11 +36,11 @@ const { image, title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.prop
                             ></path>
                         </svg>
 
-                        Cycle Theme
+                        Randomize Theme
                     </button>
                 </div>
                 <div class="md:flex md:justify-center">
-                    <main class="p-6 pt-10 max-w-[1100px]" id="main-content">
+                    <main class="p-6 pt-8 max-w-[1100px]" id="main-content">
                         <slot />
                     </main>
                 </div>
@@ -99,10 +99,7 @@ const { image, title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.prop
                 });
             });
         </script>
-    </body>
-</html>
-
-<!-- <script>
+    </body><!-- <script>
     const mainContent = document.querySelector('.drawer-content');
     const sections = document.querySelectorAll('section');
     const navItems = document.querySelectorAll('.nav-item');
@@ -128,3 +125,4 @@ const { image, title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.prop
         });
     });
 </script> -->
+</html>

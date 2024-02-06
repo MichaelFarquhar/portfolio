@@ -9,8 +9,7 @@
         "start": "astro dev",
         "build": "astro build",
         "preview": "astro preview",
-        "astro": "astro",
-        "migrate": "npm run build && git add . && git commit -m 'Automated build and commit' && git push"
+        "astro": "astro"
     },
     "dependencies": {
         "@astrojs/mdx": "^2.0.5",

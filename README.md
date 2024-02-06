@@ -5,9 +5,6 @@
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Astro](https://img.shields.io/badge/astro-ff5e00?style=for-the-badge&logo=astro&logoColor=white)
 
-
-> https://michaelfarquhar.site/
-
 ---
 
 My portfolio website built on Astro, using vanilla HTML and Javascript, styled with TailwindCSS and DaisyUI.
@@ -31,7 +28,7 @@ npm start
 ## Tech Stack
 
 -   [Astro](https://astro.build)
--   [tailwindcss](https://tailwindcss.com/)
+-   [TailwindCSS](https://tailwindcss.com/)
 -   [DaisyUI](https://daisyui.com/)
 
 ## Resources

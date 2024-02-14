@@ -15,7 +15,7 @@ interface Props {
 const { title, skills } = Astro.props;
 ---
 
-<article class="mb-12">
+<article class="mb-12 p-6 bg-base-200 rounded-lg">
     <h3 class="font-bold uppercase pb-1 opacity-90 flex items-center space-x-2">
         <slot />
 
@@ -23,7 +23,7 @@ const { title, skills } = Astro.props;
     </h3>
     {
         skills && (
-            <div class="flex flex-wrap my-4 gap-4">
+            <div class="flex flex-wrap mt-4 gap-4">
                 {skills.map((skill) => (
                     <SkillBadge src={skill.src} alt={skill.title} group={skill.group} />
                 ))}

@@ -4,20 +4,26 @@ import { projects } from '../projects';
 ---
 
 <section id="projects" class="mt-36">
-    <h2 class="text-4xl w-full font-bold mb-8">My Projects</h2>
+    <div class="flex justify-between flex-wrap gap-8 mb-12">
+        <h2 class="text-4xl font-bold">My Projects</h2>
 
-    <div class="w-full flex justify-center mb-8">
-        <div class="tabs">
-            <a id="personal-projects-tab" class="tab tab-bordered text-lg pb-9 tab-active"
-                >Personal Projects</a
-            >
-            <a id="work-projects-tab" class="tab tab-bordered text-lg pb-9"
-                >Work Projects</a
-            >
+        <div class="flex justify-end">
+            <div class="tabs">
+                <a
+                    id="personal-projects-tab"
+                    class="project-tab tab tab-bordered text-lg pb-9 tab-active"
+                    data-target-project="personal-projects">Personal</a
+                >
+                <a
+                    id="work-projects-tab"
+                    class="project-tab tab tab-bordered text-lg pb-9"
+                    data-target-project="work-projects">Work</a
+                >
+            </div>
         </div>
     </div>
 
-    <div id="personal-projects" class="pl-0 md:pl-2">
+    <div id="personal-projects" class="project">
         {
             projects.personal.map((project) => (
                 <>
@@ -29,7 +35,6 @@ import { projects } from '../projects';
                         demo={project.demo}
                         source={project.source}
                     />
-                    <div class="divider my-2" />
                 </>
             ))
         }
@@ -54,7 +59,7 @@ import { projects } from '../projects';
             </a>
         </div>
     </div>
-    <div id="work-projects" class="pl-2 hidden">
+    <div id="work-projects" class="project hidden">
         {
             projects.work.map((project) => (
                 <>
@@ -74,29 +79,19 @@ import { projects } from '../projects';
 </section>
 
 <script>
-    const workProjectsLink = document.querySelector('#work-projects-tab');
-    const personalProjectsLink = document.querySelector('#personal-projects-tab');
+    const projectLinks = document.querySelectorAll('.project-tab');
+    const projects = document.querySelectorAll('.project');
 
-    const workProjects = document.querySelector('#work-projects');
-    const personalProjects = document.querySelector('#personal-projects');
+    projectLinks.forEach((link) => {
+        link.addEventListener('click', () => {
+            projectLinks.forEach((tab) => tab.classList.remove('tab-active'));
+            (link as HTMLElement).classList.add('tab-active');
 
-    workProjectsLink.addEventListener('click', () => {
-        // Handle tab underline
-        workProjectsLink.classList.add('tab-active');
-        personalProjectsLink.classList.remove('tab-active');
-
-        // Handle project div switch
-        workProjects.classList.remove('hidden');
-        personalProjects.classList.add('hidden');
-    });
-
-    personalProjectsLink.addEventListener('click', () => {
-        // Handle tab underline
-        personalProjectsLink.classList.add('tab-active');
-        workProjectsLink.classList.remove('tab-active');
-
-        // Handle project div switch
-        personalProjects.classList.remove('hidden');
-        workProjects.classList.add('hidden');
+            projects.forEach((project) => project.classList.add('hidden'));
+            const targetProjectId = (link as HTMLElement).dataset.targetProject;
+            if (targetProjectId) {
+                document.querySelector(`#${targetProjectId}`).classList.remove('hidden');
+            }
+        });
     });
 </script>

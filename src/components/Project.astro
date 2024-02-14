@@ -11,29 +11,37 @@ interface Props {
 const { title, img, desc, demo, source, badges } = Astro.props;
 ---
 
-<article class="hero-content flex-col md:flex-row items-start">
-    <img src={img} alt={title} class="max-w-full md:max-w-[16rem] rounded-lg" />
+<article class="flex flex-col md:flex-row items-start mb-8 p-6 bg-base-200 rounded-lg">
+    <a data-fslightbox href={img}>
+        <img
+            src={img}
+            alt={title}
+            class="max-w-full md:max-w-[24rem] rounded-lg m-0 md:mr-6 shadow-lg"
+        />
+    </a>
     <div class="grow w-full">
-        <div class="flex items-center justify-between flex-wrap gap-y-4 mb-4">
-            <h1 class="text-2xl font-bold">{title}</h1>
-            <div class="flex items-center space-x-3">
-                {
-                    badges &&
-                        badges.map((badge) => {
-                            return (
-                                <div class="badge badge-info rounded-none">
-                                    {badge}
-                                </div>
-                            );
-                        })
-                }
-            </div>
+        <h1 class="text-3xl font-bold mb-3 mt-4 md:mt-0">{title}</h1>
+        <div class="flex items-center space-x-3 mb-8">
+            {
+                badges &&
+                    badges.map((badge) => {
+                        return (
+                            <div class="badge badge-outline badge-primary badge-md rounded-none">
+                                {badge}
+                            </div>
+                        );
+                    })
+            }
         </div>
         <p class="py-1 text-1xl">{desc}</p>
         <div class="card-actions mt-4 space-x-2">
             {
                 demo && (
-                    <a class="btn btn-sm btn-outline gap-2" href={demo} target="_blank">
+                    <a
+                        class="btn btn-sm btn-outline btn-active hover:opacity-80 gap-2"
+                        href={demo}
+                        target="_blank"
+                    >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -55,7 +63,7 @@ const { title, img, desc, demo, source, badges } = Astro.props;
             {
                 source && (
                     <a
-                        class="btn btn-sm btn-accent btn-outline gap-2"
+                        class="btn btn-sm btn-secondary gap-2"
                         href={source}
                         target="_blank"
                     >

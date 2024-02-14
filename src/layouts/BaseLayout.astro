@@ -20,7 +20,9 @@ const { image, title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.prop
             <div class="drawer-content flex flex-col bg-base-100">
                 <Header title={SITE_TITLE} />
                 <div class="hidden md:flex justify-end pt-8 px-12">
-                    <button class="theme-switch btn btn-secondary gap-2">
+                    <button
+                        class="theme-switch btn btn-sm btn-secondary gap-2 font-normal"
+                    >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24"
@@ -36,11 +38,11 @@ const { image, title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.prop
                             ></path>
                         </svg>
 
-                        Randomize Theme
+                        Random Theme
                     </button>
                 </div>
                 <div class="md:flex md:justify-center">
-                    <main class="p-6 pt-8 max-w-[1100px]" id="main-content">
+                    <main class="p-6 max-w-[1200px]" id="main-content">
                         <slot />
                     </main>
                 </div>

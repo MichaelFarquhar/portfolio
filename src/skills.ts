@@ -13,6 +13,11 @@ export default {
             group: 'work',
         },
         {
+            src: 'https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white',
+            title: 'NodeJS',
+            group: 'personal',
+        },
+        {
             src: 'https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white',
             title: 'Typescript',
             group: 'personal',
@@ -84,6 +89,11 @@ export default {
             group: 'personal',
         },
         {
+            src: 'https://img.shields.io/badge/Spectra-5733ff?style=for-the-badge&logo=WordPress&logoColor=white',
+            title: 'Spectra',
+            group: 'personal',
+        },
+        {
             src: 'https://img.shields.io/badge/Elementor-92003B?style=for-the-badge&logo=Elementor&logoColor=white',
             title: 'Elementor',
             group: 'personal',
@@ -123,6 +133,11 @@ export default {
         {
             src: 'https://img.shields.io/badge/Namecheap-DE3723?style=for-the-badge&logo=namecheap&logoColor=white',
             title: 'Namecheap',
+            group: 'personal',
+        },
+        {
+            src: 'https://img.shields.io/badge/Hostinger-673DE6?style=for-the-badge&logo=hostinger&logoColor=white',
+            title: 'Hostinger',
             group: 'personal',
         },
         {

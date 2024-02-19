@@ -1,6 +1,30 @@
 export const projects = {
     personal: [
         {
+            title: 'Repoclone',
+            img: 'https://i.imgur.com/0DDnb2m.png',
+            desc: 'An NPM package to clone multiple GitHub repos for a specified username or organization into the current working directory. ',
+            demo: 'https://www.npmjs.com/package/repoclone',
+            source: 'https://github.com/MichaelFarquhar/repoclone',
+            stack: ['NodeJS', 'Commander', 'Inquirer', 'NPM'],
+        },
+        {
+            title: 'Lorem Picsum - Raycast',
+            img: 'https://i.imgur.com/9m31ECc.png',
+            desc: 'A Raycast extension to easily generate placeholder images of any size, powered by Lorem Picsum @ https://picsum.photos',
+            demo: 'https://www.raycast.com/michaelfarquhar/lorem-picsum',
+            source: 'https://github.com/raycast/extensions/tree/d535fb8b9a77d92f5a8268123de859c4da571fdb/extensions/lorem-picsum/',
+            stack: ['React', 'Typescript', 'Raycast API'],
+        },
+        {
+            title: 'Astro Linksplash',
+            img: 'https://i.imgur.com/doWnxEF.png',
+            desc: 'Astro Template - Minimal and user-friendly link-sharing splash page, inspired by Linktree.',
+            demo: 'astro-linksplash.netlify.app/',
+            source: 'https://github.com/MichaelFarquhar/astro-linksplash',
+            stack: ['Astro', 'HTML5', 'Javascript', 'TailwindCSS'],
+        },
+        {
             title: 'Wordle Clone',
             img: 'https://i.imgur.com/rjyjMLG.png',
             desc: 'A wordle clone built with React and Typescript. Instead of one word per day, you can play an unlimited amount of times.',
@@ -11,15 +35,15 @@ export const projects = {
         {
             title: 'Q&A Forum',
             img: 'https://i.imgur.com/Bvr4tNg.png',
-            desc: 'Questions and answers forum built with Laravel 9.0, bootstrapped with Laravel Breeze.',
+            desc: 'Questions and answers forum built with Laravel 9.0, bootstrapped with Laravel Breeze. A simple CRUD application to emulate a site similar to Quora.',
             demo: '',
             source: 'https://github.com/MichaelFarquhar/laravel-qna-forum',
             stack: ['Laravel 9', 'Blade', 'AlpineJS', 'TailwindCSS'],
         },
         {
             title: 'Portfolio',
-            img: 'https://i.imgur.com/FrPuKFp.png',
-            desc: 'You are on this site right now!',
+            img: 'https://i.imgur.com/vU1162c.png',
+            desc: 'You are on this site right now! This iteration of the design builds upon a foundational starter template, created by Manuel Ernesto.',
             demo: '',
             source: 'https://github.com/MichaelFarquhar/portfolio',
             stack: ['Astro', 'HTML5', 'Javascript', 'TailwindCSS', 'DaisyUI'],
@@ -39,14 +63,6 @@ export const projects = {
             demo: 'https://japanese-random-kana.netlify.app/',
             source: 'https://github.com/MichaelFarquhar/japanese-random-kana',
             stack: ['React', 'Typescript', 'Sass', 'Recoil'],
-        },
-        {
-            title: 'MyVideoGameList',
-            img: 'https://i.imgur.com/Ucootqb.png',
-            desc: 'Web app to track your video game collection.',
-            demo: '',
-            source: 'https://github.com/MichaelFarquhar/mvgl',
-            stack: ['React', 'Typescript', 'Chakra UI', 'Redux', 'Firebase'],
         },
     ],
     work: [

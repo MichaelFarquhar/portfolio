@@ -9,7 +9,7 @@ const isOutboundLink = !Astro.props.href.startsWith('#');
 ---
 
 <li
-    class="nav-item mb-2 group hover:text-primary hover:translate-x-2 transition"
+    class="nav-item mb-2 group hover:text-primary transition"
     data-section={isOutboundLink ? '' : Astro.props.href.substring(1)}
 >
     <a {...Astro.props} class="flex">

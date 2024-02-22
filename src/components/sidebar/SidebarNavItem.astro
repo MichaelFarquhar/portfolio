@@ -12,7 +12,7 @@ const isOutboundLink = !Astro.props.href.startsWith('#');
     class="nav-item mb-2 group hover:text-primary transition"
     data-section={isOutboundLink ? '' : Astro.props.href.substring(1)}
 >
-    <a {...Astro.props} class="flex">
+    <a {...Astro.props} class="flex" rel={isOutboundLink ? 'noopener noreferrer' : ''}>
         <slot name="icon" />
         <span class="font-semibold ml-1">
             <slot />

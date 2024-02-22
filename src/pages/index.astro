@@ -3,6 +3,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import SkillsSection from '../layouts/SkillsSection.astro';
 import WaveIcon from '../components/WaveIcon.astro';
 import ProjectList from '../components/ProjectList.astro';
+
+import { Icon } from 'astro-icon/components';
 ---
 
 <BaseLayout>
@@ -24,22 +26,9 @@ import ProjectList from '../components/ProjectList.astro';
                     class="btn btn-primary gap-3 font-medium"
                     href="#"
                     onclick="let username = String.fromCharCode(109, 105, 99, 104, 97, 101, 108, 102, 97, 114, 113, 117, 104, 97, 114, 52); let domain = String.fromCharCode(103, 109, 97, 105, 108, 46, 99, 111, 109); this.href = 'mailto:' + username + '@' + domain;"
-                    aria-label="Email me"
+                    aria-label="Send email through mailto link"
                 >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                        class="w-5 h-5"
-                    >
-                        <path
-                            d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"
-                        ></path>
-                        <path
-                            d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"
-                        ></path>
-                    </svg>
-
+                    <Icon name="heroicons:envelope-solid" class="w-5 h-5" />
                     Send Me an Email
                 </a>
             </div>

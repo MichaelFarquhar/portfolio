@@ -15,7 +15,9 @@
         "@astrojs/mdx": "^2.0.5",
         "@astrojs/partytown": "^2.0.4",
         "@astrojs/tailwind": "^5.1.0",
+        "@iconify-json/heroicons": "^1.1.20",
         "astro": "^4.2.1",
+        "astro-icon": "^1.1.0",
         "daisyui": "^2.52.0"
     },
     "devDependencies": {

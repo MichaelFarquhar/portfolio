@@ -1,6 +1,6 @@
 ---
 import Project from './Project.astro';
-import { projects } from '../projects';
+import { projects } from '../../projects';
 ---
 
 <section id="projects" class="mt-36">
@@ -10,12 +10,10 @@ import { projects } from '../projects';
         <div class="flex justify-end">
             <div class="tabs">
                 <a
-                    id="personal-projects-tab"
                     class="project-tab tab tab-bordered text-md font-semibold pb-9 tab-active"
                     data-target-project="personal-projects">PERSONAL</a
                 >
                 <a
-                    id="work-projects-tab"
                     class="project-tab tab tab-bordered text-md font-semibold pb-9"
                     data-target-project="work-projects">WORK</a
                 >
@@ -26,16 +24,14 @@ import { projects } from '../projects';
     <div id="personal-projects" class="project">
         {
             projects.personal.map((project) => (
-                <>
-                    <Project
-                        title={project.title}
-                        img={project.img}
-                        desc={project.desc}
-                        badges={project.stack}
-                        demo={project.demo}
-                        source={project.source}
-                    />
-                </>
+                <Project
+                    title={project.title}
+                    img={project.img}
+                    desc={project.desc}
+                    badges={project.stack}
+                    demo={project.demo}
+                    source={project.source}
+                />
             ))
         }
         <div class="grid place-items-center mt-8 ml-4">

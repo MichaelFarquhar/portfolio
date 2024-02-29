@@ -1,8 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import SkillsSection from '../layouts/SkillsSection.astro';
+import SkillsSection from '../components/skills/SkillsSection.astro';
 import WaveIcon from '../components/WaveIcon.astro';
-import ProjectList from '../components/ProjectList.astro';
+import ProjectSection from '../components/projects/ProjectSection.astro';
 
 import { Icon } from 'astro-icon/components';
 ---
@@ -62,6 +62,6 @@ import { Icon } from 'astro-icon/components';
         </div>
     </section>
 
-    <ProjectList />
+    <ProjectSection />
     <SkillsSection />
 </BaseLayout>

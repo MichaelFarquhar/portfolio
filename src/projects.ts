@@ -65,6 +65,32 @@ export const projects = {
             stack: ['React', 'Typescript', 'Sass', 'Recoil'],
         },
     ],
+    freelance: [
+        {
+            title: 'Augustos',
+            img: 'https://i.imgur.com/0uYNDJV.png',
+            desc: 'Local restaurant business website built in Wordpress and Spectra. This website is yet to be released and currently in its design stage.',
+            demo: 'https://augustos.mikefarquhar.com',
+            source: '',
+            stack: ['WordPress', 'Spectra', 'Astra'],
+        },
+        {
+            title: 'MikeFarquhar.com',
+            img: 'https://i.imgur.com/gULT1G5.png',
+            desc: 'My website home page for my freelancing web agency business. Built with Wordpress and Spectra.',
+            demo: 'https://mikefarquhar.com',
+            source: '',
+            stack: ['WordPress', 'Spectra', 'Astra'],
+        },
+        {
+            title: 'VapeVine',
+            img: 'https://i.imgur.com/MTmEka6.png',
+            desc: 'A website I briefly worked on, providing minor CSS/theme updates and general maintenance such as plugin updates.',
+            demo: 'https://vapevine.ca/',
+            source: '',
+            stack: ['WordPress', 'WooCommerce'],
+        },
+    ],
     work: [
         {
             title: 'Spitsgear',

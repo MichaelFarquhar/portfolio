@@ -16,6 +16,10 @@ import { Icon } from 'astro-icon/components';
                 >
                 <a
                     class="project-tab tab tab-bordered text-md font-semibold pb-9"
+                    data-target-project="freelance-projects">FREELANCE</a
+                >
+                <a
+                    class="project-tab tab tab-bordered text-md font-semibold pb-9"
                     data-target-project="work-projects">WORK</a
                 >
             </div>
@@ -46,6 +50,23 @@ import { Icon } from 'astro-icon/components';
                 View All Repos
             </a>
         </div>
+    </div>
+    <div id="freelance-projects" class="project hidden">
+        {
+            projects.freelance.map((project) => (
+                <>
+                    <Project
+                        title={project.title}
+                        img={project.img}
+                        desc={project.desc}
+                        badges={project.stack}
+                        demo={project.demo}
+                        source={project.source}
+                    />
+                    <div class="divider my-2" />
+                </>
+            ))
+        }
     </div>
     <div id="work-projects" class="project hidden">
         {

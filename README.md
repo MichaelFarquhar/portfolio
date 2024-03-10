@@ -1,11 +1,8 @@
-# My Portfolio
+# Personal Portfolio
 
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![Astro](https://img.shields.io/badge/astro-ff5e00?style=for-the-badge&logo=astro&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-
----
+![DaisyUI](https://img.shields.io/badge/daisyui-%235A0EF8.svg?style=for-the-badge)
 
 My portfolio website built on Astro, using vanilla HTML and Javascript, styled with TailwindCSS and DaisyUI.
 
@@ -25,12 +22,6 @@ npm install
 npm start
 ```
 
-## Tech Stack
-
--   [Astro](https://astro.build)
--   [TailwindCSS](https://tailwindcss.com/)
--   [DaisyUI](https://daisyui.com/)
-
 ## Resources
 
 -   [Themes - DaisyUI](https://daisyui.com/docs/themes/)
@@ -39,6 +30,6 @@ npm start
 -   [Skill Badges - Shields.io](https://shields.io/)
 -   [Markdown Badges - Github](https://github.com/Ileriayo/markdown-badges)
 
-# License
+## License
 
 Licensed under the MIT license — see the [LICENSE](LICENSE) file for details.

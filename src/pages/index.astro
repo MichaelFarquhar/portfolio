@@ -1,7 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SkillsSection from '../components/skills/SkillsSection.astro';
-import WaveIcon from '../components/WaveIcon.astro';
 import ProjectSection from '../components/projects/ProjectSection.astro';
 
 import { Icon } from 'astro-icon/components';
@@ -10,23 +9,33 @@ import { Icon } from 'astro-icon/components';
 <BaseLayout>
     <section id="about">
         <div class="mt-5">
+            <div class="avatar flex justify-center mb-10">
+                <div
+                    class="w-28 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2"
+                >
+                    <img src="/avatar.png" alt="Avatar image" />
+                </div>
+            </div>
             <h1
                 class="text-6xl md:text-7xl font-bold mb-8 flex items-center justify-center text-center flex-wrap-reverse gap-y-6 font-signika"
             >
-                Hey, I'm Michael. <WaveIcon />
+                Hey, I'm Michael
             </h1>
             <text class="text-md md:text-lg flex text-center">
-                Experienced web developer with 3+ years of experience designing and
+                I'm an experienced web developer with 4 years of experience designing and
                 implementing engaging, user-friendly web experiences. I am professional
                 skilled in React, Sass, PHP and MySQL, with a strong focus on responsive
                 design and accessibility. I am constantly learning new things, and have
                 gained experience in a variety of other web frameworks and languages
-                through building personal projects. When I'm not coding, you may find me
-                scoring triple digits on the golf course, teaching overly-complicated
-                board games, laying on the couch playing Playstation 5 or getting lost in
-                a good book.
+                through building various personal projects. I primarily enjoy front-end
+                development using Astro or React, styling with TailwindCSS.
+            </text><br />
+            <text class="text-md md:text-lg flex text-center">
+                When I'm not coding, you may find me scoring triple digits on the golf
+                course, teaching overly-complicated board games, laying on the couch
+                playing Playstation 5 or getting lost in a good book.
             </text>
-            <div class="w-full flex justify-center my-8">
+            <div class="w-full flex justify-center mt-12 mb-8">
                 <div class="w-full md:w-6/12 flex items-center justify-center space-x-6">
                     <div class="w-full h-0.5 bg-base-content"></div>
                     <div class="flex items-center justify-center space-x-3">

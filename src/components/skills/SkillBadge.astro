@@ -8,4 +8,11 @@ interface Props {
 const { src, alt, group } = Astro.props;
 ---
 
-<img class="transition ease-in-out" data-type={group} src={src} alt={alt} title={alt} />
+<img
+    class="transition ease-in-out"
+    data-type={group}
+    src={src}
+    alt={alt}
+    title={alt}
+    loading="lazy"
+/>

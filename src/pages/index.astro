@@ -5,6 +5,7 @@ import ProjectSection from '../components/projects/ProjectSection.astro';
 import CertificationsSection from '../components/certifications/CertificationsSection.astro';
 
 import { Icon } from 'astro-icon/components';
+import Image from 'astro/components/Image.astro';
 ---
 
 <BaseLayout>
@@ -14,7 +15,13 @@ import { Icon } from 'astro-icon/components';
                 <div
                     class="w-28 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2"
                 >
-                    <img src="/avatar.png" alt="Avatar" />
+                    <Image
+                        src="/avatar.png"
+                        width="112"
+                        height="112"
+                        alt="Avatar"
+                        loading="eager"
+                    />
                 </div>
             </div>
             <h1

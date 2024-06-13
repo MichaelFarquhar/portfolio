@@ -19,7 +19,7 @@ const { title, img, desc, demo, source, badges } = Astro.props;
 >
     <a data-fslightbox href={img}>
         <Image
-            src={img}
+            src={`/images/${img}`}
             width="385"
             height="225"
             alt={title}

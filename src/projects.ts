@@ -2,7 +2,7 @@ export const projects = {
     personal: [
         {
             title: 'Repoclone',
-            img: 'https://i.imgur.com/0DDnb2m.png',
+            img: 'repoclone.png',
             desc: 'An NPM package to clone multiple GitHub repos for a specified username or organization into the current working directory.',
             demo: 'https://www.npmjs.com/package/repoclone',
             source: 'https://github.com/MichaelFarquhar/repoclone',
@@ -10,7 +10,7 @@ export const projects = {
         },
         {
             title: 'Lorem Picsum - Raycast',
-            img: 'https://i.imgur.com/9m31ECc.png',
+            img: 'lorem-picsum.png',
             desc: 'A Raycast extension to easily generate placeholder images of any size, powered by Lorem Picsum @ https://picsum.photos',
             demo: 'https://www.raycast.com/michaelfarquhar/lorem-picsum',
             source: 'https://github.com/raycast/extensions/tree/d535fb8b9a77d92f5a8268123de859c4da571fdb/extensions/lorem-picsum/',
@@ -18,7 +18,7 @@ export const projects = {
         },
         {
             title: 'Astro Linksplash',
-            img: 'https://i.imgur.com/doWnxEF.png',
+            img: 'astro-linksplash.png',
             desc: 'Astro Template - Minimal and user-friendly link-sharing splash page, inspired by Linktree.',
             demo: 'astro-linksplash.netlify.app/',
             source: 'https://github.com/MichaelFarquhar/astro-linksplash',
@@ -26,7 +26,7 @@ export const projects = {
         },
         {
             title: 'Wordle Clone',
-            img: 'https://i.imgur.com/rjyjMLG.png',
+            img: 'wordle.png',
             desc: 'A wordle clone built with React and Typescript. Instead of one word per day, you can play an unlimited amount of times.',
             demo: 'https://wordle-like-app.netlify.app/',
             source: 'https://github.com/MichaelFarquhar/wordle-clone',
@@ -34,7 +34,7 @@ export const projects = {
         },
         {
             title: 'Portfolio',
-            img: 'https://i.imgur.com/vU1162c.png',
+            img: 'portfolio.png',
             desc: 'You are on this site right now! This is an Astro static site, built upon a foundational starter template.',
             demo: 'https://michaelfarquhar.bio/',
             source: 'https://github.com/MichaelFarquhar/portfolio',
@@ -42,7 +42,7 @@ export const projects = {
         },
         {
             title: 'Random Japanese Kana',
-            img: 'https://i.imgur.com/cMB1A71.png',
+            img: 'random-kana.png',
             desc: 'Web app randomizer for quizzing Japanese Hiragana and Katakana.',
             demo: 'https://japanese-random-kana.netlify.app/',
             source: 'https://github.com/MichaelFarquhar/japanese-random-kana',
@@ -50,7 +50,7 @@ export const projects = {
         },
         {
             title: 'Q&A Forum',
-            img: 'https://i.imgur.com/Bvr4tNg.png',
+            img: 'laravel-qna.png',
             desc: 'Questions and answers forum built with Laravel 9.0, bootstrapped with Laravel Breeze. A simple CRUD application to emulate a site similar to Quora.',
             demo: '',
             source: 'https://github.com/MichaelFarquhar/laravel-qna-forum',
@@ -58,7 +58,7 @@ export const projects = {
         },
         {
             title: 'StackShot',
-            img: 'https://i.imgur.com/Mcrn0GX.png',
+            img: 'stackshot.png',
             desc: 'Create a custom snapshot of your software stack and download the image for use on your github repos.',
             demo: 'https://stackshotapp.netlify.app/',
             source: 'https://github.com/MichaelFarquhar/stackshot',
@@ -68,7 +68,7 @@ export const projects = {
     freelance: [
         {
             title: 'Motor Cities Shuttles',
-            img: 'https://imgur.com/fVGtFlt.png',
+            img: 'motorcityshuttles.png',
             desc: 'A project contracted out to me by my previous employer at Digital Media. This is a simple website landing page built with PHP, SASS and MySQL.',
             demo: 'https://motorcitiesshuttle.com/',
             source: '',
@@ -76,7 +76,7 @@ export const projects = {
         },
         {
             title: 'Augustos',
-            img: 'https://i.imgur.com/0uYNDJV.png',
+            img: 'augustos.png',
             desc: 'Website for a local restaurant opening in Leamington, Ontario. The website design is ready and waiting for the restaurant to open before being released and updated. This site is built with Wordpress and Spectra page builder, using the Astra Theme.',
             demo: 'https://augustos.mikefarquhar.com',
             source: '',
@@ -84,7 +84,7 @@ export const projects = {
         },
         {
             title: 'Mike Farquhar',
-            img: 'https://i.imgur.com/gULT1G5.png',
+            img: 'mike-farquhar.png',
             desc: 'My website home page for my freelancing web agency business. This site is built with Wordpress and Spectra page builder, using the Astra Theme.',
             demo: 'https://mikefarquhar.com',
             source: '',
@@ -92,7 +92,7 @@ export const projects = {
         },
         {
             title: 'VapeVine',
-            img: 'https://i.imgur.com/MTmEka6.png',
+            img: 'vapevine.png',
             desc: 'A website I briefly worked on, providing minor CSS/theme updates and general maintenance such as plugin updates.',
             demo: 'https://vapevine.ca/',
             source: '',
@@ -102,7 +102,7 @@ export const projects = {
     work: [
         {
             title: 'Spitsgear',
-            img: 'https://i.imgur.com/QISsbi1.png',
+            img: 'spitsgear.png',
             desc: 'Online e-commerce website for the Windsor Spitsfires merchandise store. Custom built shopping cart using React, PHP and MySQL.',
             demo: 'https://spitsgear.com',
             source: '',
@@ -110,7 +110,7 @@ export const projects = {
         },
         {
             title: 'Muscedere Vineyards',
-            img: 'https://i.imgur.com/cOsO5i5.png',
+            img: 'muscedere.png',
             desc: 'A second example of a shopping cart site, built with the same stack. Online store for a local Winery in Harrow, Ontario.',
             demo: 'https://shop.muscederevineyards.com/',
             source: '',
@@ -118,7 +118,7 @@ export const projects = {
         },
         {
             title: 'Digital Media',
-            img: 'https://i.imgur.com/mo8y5mB.png',
+            img: 'digital-media.png',
             desc: 'Redesigned home page of Digital Media. Built with PHP, Sass and MySQL.',
             demo: 'https://digitalmedia.ca/',
             source: '',
@@ -126,7 +126,7 @@ export const projects = {
         },
         {
             title: 'Rothmosey',
-            img: 'https://i.imgur.com/ejdWu12.png',
+            img: 'rothmosey.png',
             desc: 'An example of the typical website built at Digital Media, using with an in-house PHP framework.',
             demo: 'https://rothmosey.com/',
             source: '',
@@ -134,7 +134,7 @@ export const projects = {
         },
         {
             title: 'Oxley Estate Winery',
-            img: 'https://i.imgur.com/A9pTpig.png',
+            img: 'oxley.png',
             desc: 'A second example of the typical website.',
             demo: 'https://oxleyestatewinery.com/',
             source: '',

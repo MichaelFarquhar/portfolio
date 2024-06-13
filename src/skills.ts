@@ -94,13 +94,18 @@ export default {
             group: 'personal',
         },
         {
-            src: 'https://img.shields.io/badge/Elementor-92003B?style=for-the-badge&logo=Elementor&logoColor=white',
-            title: 'Elementor',
+            src: 'https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white',
+            title: 'VS Code',
+            group: 'work',
+        },
+        {
+            src: 'https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white',
+            title: 'NPM',
             group: 'personal',
         },
         {
-            src: 'https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white',
-            title: 'VS Code',
+            src: 'https://img.shields.io/badge/yarn-%232C8EBB.svg?style=for-the-badge&logo=yarn&logoColor=white',
+            title: 'Yarn',
             group: 'work',
         },
         {

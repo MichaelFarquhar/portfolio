@@ -88,7 +88,7 @@ export const projects = {
             desc: 'Provided minor updates to the Ambassador Golf Club website. Editing content and images, improving page speed and SEO, fixing design inconsistencies and various other minor improvements.',
             demo: 'https://ambassadorgolfclub.com/',
             source: '',
-            stack: ['WordPress, Elementor'],
+            stack: ['WordPress', 'Elementor'],
         },
         {
             title: 'Mike Farquhar',

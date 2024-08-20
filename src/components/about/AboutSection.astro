@@ -1,0 +1,70 @@
+---
+import { Icon } from 'astro-icon/components';
+import Image from 'astro/components/Image.astro';
+---
+
+<section id="about">
+    <div class="mt-5">
+        <div class="avatar flex justify-center mb-10">
+            <div
+                class="w-28 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2"
+            >
+                <Image
+                    src="/avatar.png"
+                    width="112"
+                    height="112"
+                    alt="Avatar"
+                    loading="eager"
+                />
+            </div>
+        </div>
+        <h1
+            class="text-6xl md:text-7xl font-bold mb-8 flex items-center justify-center text-center flex-wrap-reverse gap-y-6 font-signika"
+        >
+            Hey, I'm Michael
+        </h1>
+        <text class="text-md md:text-lg flex text-center">
+            I am an experienced web developer with four years of experience designing and
+            implementing engaging, user-friendly web applications. My primary experience
+            is based in React, Sass, PHP, and MySQL, but i also particularly enjoy
+            TypeScript, TailwindCSS and Laravel. I am an extremely fast learner and am
+            always on the hunt for new knowledge. When I'm not coding, you may find me
+            scoring triple digits on the golf course, teaching overly complicated board
+            games, lounging on the couch playing video games, or getting lost in a good
+            book.
+        </text>
+        <div class="w-full flex justify-center mt-12 mb-8">
+            <div class="w-full md:w-6/12 flex items-center justify-center space-x-6">
+                <div class="w-full h-0.5 bg-base-content"></div>
+                <div class="flex items-center justify-center space-x-3">
+                    <Icon name="ion:golf-outline" class="w-6 h-6" />
+                    <Icon name="ion:dice-outline" class="w-6 h-6" />
+                    <Icon name="ion:game-controller-outline" class="w-6 h-6" />
+                    <Icon name="ion:book-outline" class="w-6 h-6" />
+                    <Icon name="ion:pizza-outline" class="w-6 h-6" />
+                    <Icon name="ion:airplane-outline" class="w-6 h-6" />
+                </div>
+                <div class="w-full h-0.5 bg-base-content"></div>
+            </div>
+        </div>
+        <div class="mt-12 flex items-center justify-center flex-wrap gap-6">
+            <a
+                class="btn btn-outline btn-active hover:opacity-80 gap-3 font-medium"
+                href="#projects"
+                aria-label="Scroll down to project sections"
+            >
+                <Icon name="heroicons:arrow-down-circle-solid" class="w-5 h-5" />
+                View My Projects
+            </a>
+            <a
+                class="btn btn-primary gap-3 font-medium"
+                href="#"
+                onclick="let username = String.fromCharCode(109, 105, 99, 104, 97, 101, 108, 102, 97, 114, 113, 117, 104, 97, 114, 52); let domain = String.fromCharCode(103, 109, 97, 105, 108, 46, 99, 111, 109); this.href = 'mailto:' + username + '@' + domain;"
+                aria-label="Send email through mailto link"
+            >
+                <Icon name="heroicons:envelope-solid" class="w-5 h-5" />
+                Send Me an Email
+            </a>
+        </div>
+    </div>
+</section>

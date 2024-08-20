@@ -83,6 +83,14 @@ export const projects = {
             stack: ['WordPress', 'Spectra', 'Astra'],
         },
         {
+            title: 'Ambassador Golf Club',
+            img: 'ambassador.png',
+            desc: 'Provided minor updates to the Ambassador Golf Club website. Editing content and images, improving page speed and SEO, fixing design inconsistencies and various other minor improvements.',
+            demo: 'https://ambassadorgolfclub.com/',
+            source: '',
+            stack: ['WordPress, Elementor'],
+        },
+        {
             title: 'Mike Farquhar',
             img: 'mike-farquhar.png',
             desc: 'My website home page for my freelancing web agency business. This site is built with Wordpress and Spectra page builder, using the Astra Theme.',
@@ -139,6 +147,14 @@ export const projects = {
             demo: 'https://oxleyestatewinery.com/',
             source: '',
             stack: ['LAMP', 'PHP', 'Sass', 'MySQL'],
+        },
+        {
+            title: 'Pursuit Challenge',
+            img: 'pursuitchallenge.png',
+            desc: 'A Laravel application that is no longer being supported. A fitness challenge web application where users could create or join a team and compete agaisnt other users. Built with Laravel 7, Blade, Bootstrap and MySQL.',
+            demo: 'https://www.facebook.com/pursuitchallenge.official/',
+            source: '',
+            stack: ['Laravel', 'Bootstrap', 'PHP', 'MySQL'],
         },
     ],
 };

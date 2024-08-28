@@ -8,14 +8,19 @@ export default {
             group: 'work',
         },
         {
+            src: 'https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white',
+            title: 'CSS',
+            group: 'work',
+        },
+        {
             src: 'https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E',
             title: 'Javascript',
             group: 'work',
         },
         {
-            src: 'https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white',
-            title: 'NodeJS',
-            group: 'personal',
+            src: 'https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white',
+            title: 'JQuery',
+            group: 'work',
         },
         {
             src: 'https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white',
@@ -33,10 +38,15 @@ export default {
             group: 'work',
         },
     ],
-    styling: [
+    frameworks: [
         {
-            src: 'https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white',
-            title: 'CSS',
+            src: 'https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB',
+            title: 'React',
+            group: 'work',
+        },
+        {
+            src: 'https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white',
+            title: 'Redux',
             group: 'work',
         },
         {
@@ -50,31 +60,14 @@ export default {
             group: 'personal',
         },
         {
-            src: 'https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white',
-            title: 'Bootstrap',
-            group: 'work',
-        },
-    ],
-    frameworks: [
-        {
-            src: 'https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB',
-            title: 'React',
-            group: 'work',
-        },
-        {
-            src: 'https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white',
-            title: 'Redux',
+            src: 'https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white',
+            title: 'Laravel',
             group: 'work',
         },
         {
             src: 'https://img.shields.io/badge/astro-ff5e00?style=for-the-badge&logo=astro&logoColor=white',
             title: 'Astro',
             group: 'personal',
-        },
-        {
-            src: 'https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white',
-            title: 'Laravel',
-            group: 'work',
         },
         {
             src: 'https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase',
@@ -94,18 +87,18 @@ export default {
             group: 'personal',
         },
         {
-            src: 'https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white',
-            title: 'VS Code',
+            src: 'https://img.shields.io/badge/apache-%23D42029.svg?style=for-the-badge&logo=apache&logoColor=white',
+            title: 'Apache',
             group: 'work',
         },
         {
-            src: 'https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white',
-            title: 'NPM',
+            src: 'https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white',
+            title: 'Figma',
             group: 'personal',
         },
         {
-            src: 'https://img.shields.io/badge/yarn-%232C8EBB.svg?style=for-the-badge&logo=yarn&logoColor=white',
-            title: 'Yarn',
+            src: 'https://img.shields.io/badge/VS_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white',
+            title: 'VS Code',
             group: 'work',
         },
         {
@@ -146,7 +139,7 @@ export default {
             group: 'personal',
         },
         {
-            src: 'https://img.shields.io/badge/Porkbun-f27777?style=for-the-badge',
+            src: 'https://img.shields.io/badge/Porkbun-EF7878?style=for-the-badge&logo=porkbun&logoColor=white',
             title: 'Porkbun',
             group: 'personal',
         },

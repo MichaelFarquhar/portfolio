@@ -75,10 +75,10 @@ export const projects = {
             stack: ['PHP', 'Sass', 'MySQL'],
         },
         {
-            title: 'Augustos',
+            title: 'Augustos Grill',
             img: 'augustos.png',
-            desc: 'Website for a local restaurant opening in Leamington, Ontario. The website design is ready and waiting for the restaurant to open before being released and updated. This site is built with Wordpress and Spectra page builder, using the Astra Theme.',
-            demo: 'https://augustos.mikefarquhar.com',
+            desc: 'Website for a local restaurant opening in Leamington, Ontario. This site is built with Wordpress and Spectra page builder, using the Astra Theme.',
+            demo: 'https://augustosgrill.com',
             source: '',
             stack: ['WordPress', 'Spectra', 'Astra'],
         },

@@ -97,8 +97,8 @@ export default {
             group: 'personal',
         },
         {
-            src: 'https://img.shields.io/badge/VS_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white',
-            title: 'VS Code',
+            src: 'https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white',
+            title: 'Heroku',
             group: 'work',
         },
         {
@@ -114,38 +114,6 @@ export default {
         {
             src: 'https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white',
             title: 'Notion',
-            group: 'personal',
-        },
-    ],
-    hosting: [
-        {
-            src: 'https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7',
-            title: 'Netlify',
-            group: 'personal',
-        },
-        {
-            src: 'https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white',
-            title: 'Heroku',
-            group: 'work',
-        },
-        {
-            src: 'https://img.shields.io/badge/Namecheap-DE3723?style=for-the-badge&logo=namecheap&logoColor=white',
-            title: 'Namecheap',
-            group: 'personal',
-        },
-        {
-            src: 'https://img.shields.io/badge/Hostinger-673DE6?style=for-the-badge&logo=hostinger&logoColor=white',
-            title: 'Hostinger',
-            group: 'personal',
-        },
-        {
-            src: 'https://img.shields.io/badge/Porkbun-EF7878?style=for-the-badge&logo=porkbun&logoColor=white',
-            title: 'Porkbun',
-            group: 'personal',
-        },
-        {
-            src: 'https://img.shields.io/badge/Dreamhost-0073ec?style=for-the-badge',
-            title: 'Dreamhost',
             group: 'personal',
         },
     ],

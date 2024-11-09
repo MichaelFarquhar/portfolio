@@ -37,6 +37,11 @@ export default {
             title: 'MySQL',
             group: 'work',
         },
+        {
+            src: 'https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white',
+            title: 'C#',
+            group: 'work',
+        },
     ],
     frameworks: [
         {
@@ -60,6 +65,11 @@ export default {
             group: 'personal',
         },
         {
+            src: 'https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white',
+            title: 'MUI',
+            group: 'work',
+        },
+        {
             src: 'https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white',
             title: 'Laravel',
             group: 'work',
@@ -70,20 +80,15 @@ export default {
             group: 'personal',
         },
         {
-            src: 'https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase',
-            title: 'Firebase',
-            group: 'personal',
+            src: 'https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white',
+            title: '.NET',
+            group: 'work',
         },
     ],
     software: [
         {
             src: 'https://img.shields.io/badge/WordPress-21759B?style=for-the-badge&logo=WordPress&logoColor=white',
             title: 'WordPress',
-            group: 'personal',
-        },
-        {
-            src: 'https://img.shields.io/badge/Spectra-5733ff?style=for-the-badge&logo=WordPress&logoColor=white',
-            title: 'Spectra',
             group: 'personal',
         },
         {
@@ -95,6 +100,11 @@ export default {
             src: 'https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white',
             title: 'Figma',
             group: 'personal',
+        },
+        {
+            src: 'https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white',
+            title: 'Jira',
+            group: 'work',
         },
         {
             src: 'https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white',

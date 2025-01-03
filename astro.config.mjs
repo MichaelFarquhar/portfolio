@@ -7,7 +7,8 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://portfolio.mikefarquhar.net/dist',
+  site: 'https://MichaelFarquhar.github.io',
+  base: 'portfolio',
   integrations: [mdx(), tailwind(), partytown({
     config: {
       forward: ['dataLayer.push']

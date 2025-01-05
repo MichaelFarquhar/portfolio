@@ -36,7 +36,7 @@ export const projects = {
             title: 'Portfolio',
             img: 'portfolio.png',
             desc: 'You are on this site right now! This is an Astro static site, built upon a foundational starter template.',
-            demo: 'https://michaelfarquhar.bio/',
+            demo: 'https://michaelfarquhar.github.io/portfolio/',
             source: 'https://github.com/MichaelFarquhar/portfolio',
             stack: ['Astro', 'HTML5', 'Javascript', 'TailwindCSS', 'DaisyUI'],
         },
